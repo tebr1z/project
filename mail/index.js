@@ -20,7 +20,7 @@ app.post('/send-email', async (req, res) => {
             secure: true,
             auth: {
                 user: 'admin@hasimovtabriz.com.tr',
-                pass: '**********',
+                pass: '3865606rt.',
             },
             tls: {
                 rejectUnauthorized: false,
@@ -51,7 +51,7 @@ app.post('/send-email', async (req, res) => {
         console.log("Message sent: " + info.messageId);
 
         const info1 = await transporter.sendMail({
-            from: 'Tabriz <admin@hasimovtabriz.com.tr>',
+            from: 'Tabriz 57 <admin@hasimovtabriz.com.tr>',
             to: email,
             subject: 'Hashimov Tabriz',
             html: `

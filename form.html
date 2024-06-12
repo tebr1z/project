@@ -34,35 +34,7 @@
     <link rel="stylesheet" href="style.css" />
 
 
-    <script>
-      async function sendFormData(event) {
-        event.preventDefault();
-  
-        const formData = {
-          fullName: document.getElementById('name').value,
-          phoneNumber: document.getElementById('phone').value,
-          date: document.getElementById('date').value,
-          time: document.getElementById('time').value,
-          seats: document.getElementById('seats').value,
-          email: document.getElementById('email').value,
-          notes: document.getElementById('notes').value
-        };
-  
-        const response = await fetch('http://localhost:4000/send-email', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        });
-  
-        if (response.ok) {
-          alert('Form successfully submitted!');
-        } else {
-          alert('There was a problem with your submission.');
-        }
-      }
-    </script>
+ 
 
   </head>
   <body>
