@@ -28,11 +28,11 @@ app.post('/send-email', async (req, res) => {
         });
         const info = await transporter.sendMail({
             from: 'Tabriz <admin@hasimovtabriz.com.tr>',
-            to: `hasimovtabriz@gmail.com`,
+            to: `tebosh57@gmail.com`,
             subject: 'Hashimov Tabriz',
             html: `
             <div style="font-family: 'Arial', sans-serif; background-color: #f8f8f8; padding: 20px; text-align: center; ">
-            <h1 style="color: #333; margin-bottom: 20px; font-size: 28px; font-weight: bold;">Tabriz Hashimov</h1>
+            <h1 style="color: #333; margin-bottom: 20px; font-size: 28px; font-weight: bold;">Istafdeciden gelen</h1>
             <div style="border: 2px solid #333; padding: 20px; background-color: #fff; border-radius: 10px;">
                 <h2 style="color: #333; margin-bottom: 10px; font-size: 24px;">Ad: ${fullName}</h2>
                 <h3 style="color: #333; margin-bottom: 10px; font-size: 20px;">E-post: ${email}</h3>
@@ -56,7 +56,7 @@ app.post('/send-email', async (req, res) => {
             subject: 'Hashimov Tabriz',
             html: `
            <div style="font-family: 'Arial', sans-serif; background-color: #f8f8f8; padding: 20px; text-align: center; ">
-            <h1 style="color: #333; margin-bottom: 20px; font-size: 28px; font-weight: bold;">Tabriz Hashimov</h1>
+            <h1 style="color: #333; margin-bottom: 20px; font-size: 28px; font-weight: bold;">Gonderilen E-posta</h1>
             <div style="border: 2px solid #333; padding: 20px; background-color: #fff; border-radius: 10px;">
                 <h2 style="color: #333; margin-bottom: 10px; font-size: 24px;">Ad: ${fullName}</h2>
                 <h3 style="color: #333; margin-bottom: 10px; font-size: 20px;">E-post: ${email}</h3>
