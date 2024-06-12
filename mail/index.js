@@ -20,7 +20,7 @@ app.post('/send-email', async (req, res) => {
             secure: true,
             auth: {
                 user: 'admin@hasimovtabriz.com.tr',
-                pass: '3865606rt.',
+                pass: '**********',
             },
             tls: {
                 rejectUnauthorized: false,
