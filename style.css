@@ -1,0 +1,1049 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.fa-star {
+  color: gray;
+  font-size: 9px;
+  padding-left: 7px;
+}
+.header-bg-fon {
+  background-image: url(img/home-1-slide-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.nav-logo {
+  width: 106px;
+  height: 40px;
+}
+.nav-logo img {
+  width: 100%;
+}
+.nav-link {
+  color: white !important;
+  font-family: "Roboto Slab", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  transition: 0.5s ease all;
+}
+.nav-link:hover {
+  color: #ffd71b !important;
+}
+.navbar-nav {
+  margin: 0 auto !important;
+}
+.form-outline {
+  position: relative;
+}
+.btn-primary {
+  color: black !important;
+  background-color: #ffd71b !important;
+  border: none;
+  height: 100%;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+.nav-right {
+  display: flex;
+  justify-content: left;
+  align-items: center !important;
+}
+.nav-right > p {
+  margin-bottom: 0em !important;
+  padding-left: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.fa-cart-shopping {
+  padding-left: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.fa-bars {
+  color: white;
+  font-size: 32px;
+}
+.swiper-container {
+  width: 100% !important;
+  height: 100%;
+}
+/* swiper header start */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  margin: 0 auto;
+}
+.swiper-slide {
+  opacity: 1;
+}
+.left-col {
+  opacity: 0;
+}
+
+.right-col {
+  opacity: 0;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Sağdaki resmin yavaşça görünmesi */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.7);
+  }
+}
+
+.right-col-one img,
+.right-col-tow img,
+.right-col-three img,
+.right-col-four img {
+  opacity: 0;
+}
+
+@keyframes slide-up-animation {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.wine-knife {
+  margin-bottom: -200px;
+}
+
+.right-col-one {
+  animation: slide-up-animation 0.5s forwards;
+  animation-delay: 0.1s; /* İlk resim için 0.1 saniye gecikme */
+}
+
+.right-col-tow {
+  animation: slide-up-animation 0.5s forwards;
+  animation-delay: 0.2s; /* İkinci resim için 0.2 saniye gecikme */
+}
+
+.right-col-three {
+  animation: slide-up-animation 0.5s forwards;
+  animation-delay: 0.3s; /* Üçüncü resim için 0.3 saniye gecikme */
+}
+
+.right-col-four {
+  animation: slide-up-animation 0.5s forwards;
+  animation-delay: 0.4s; /* Dördüncü resim için 0.4 saniye gecikme */
+}
+
+/* Animasyon sınıfları */
+.slide-in-left {
+  animation: slide-in-left 1s forwards;
+}
+
+.fade-in {
+  animation: fade-in 1s forwards;
+}
+
+.swiper-wrapper {
+  margin-top: -70px;
+}
+.swiper-textP {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 15px 0 7px 0;
+}
+.swiper-textSpan {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* animation slider end */
+
+.section-card {
+  position: relative;
+  z-index: 10;
+  top: -100px;
+  padding: 60px 60px;
+}
+.card-title {
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px;
+}
+.card-text {
+  color: gray;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.01rem;
+}
+.art-galery {
+  background-color: #111;
+  color: #fff;
+  padding-top: 35px;
+  padding-bottom: 48px;
+}
+
+.custom-div {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-div img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-div:hover img {
+  transform: scale(1.1);
+}
+
+.custom-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Siyah yarı saydam arka plan */
+  opacity: 0; /* Başlangıçta görünmez */
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.custom-div:hover::before {
+  opacity: 1; /* Fare üzerine geldiğinde görünür */
+}
+
+.custom-div:hover .custom-text {
+  opacity: 1; /* Fare üzerine geldiğinde görünür */
+}
+
+.custom-text {
+  opacity: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  z-index: 20;
+  color: white; /* Beyaz yazı rengi */
+}
+
+.art-gallery-card {
+  width: 227px;
+  height: 241px !important;
+}
+.custom-div {
+  width: 100%;
+  height: 100%;
+}
+.custom-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slid-h {
+  height: 400px;
+}
+.Gallery-left p {
+  font-size: 32px;
+  color: white;
+  width: 142px !important;
+}
+.Gallery-left ul {
+  padding-left: 30px;
+  width: 450px;
+}
+.Gallery-left ul li button {
+  background-color: transparent;
+  color: white;
+  transition: all ease;
+}
+.Gallery-left ul li button:hover {
+  color: #ffd71b;
+}
+.Gallery-top {
+  padding-bottom: 40px;
+}
+
+.content {
+  display: none;
+}
+.fa-hand-point-right {
+  padding-right: 10px;
+  font-size: 18px;
+}
+.full-gallery {
+  width: 150px;
+  height: 43px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.full-gallery:hover {
+  background-color: #ffd71b;
+}
+
+.welcome {
+  padding-top: 80px;
+}
+.welcome-left {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.welcome-left p {
+  font-size: 30px;
+  line-height: 1.75em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #111;
+}
+.welcome-left span {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  color: #707070;
+  font-weight: 400;
+}
+.welcome-left button {
+  margin-top: 30px;
+  background-color: #ffd71b;
+  border: 2px solid #ffd71b;
+  color: #111;
+  width: 156px;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.5s ease all;
+}
+.welcome-left button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+.welcome-right {
+  padding-top: 20px;
+}
+.welcome-right img {
+  width: 100%;
+}
+
+.RECOMMENDED {
+  margin-top: 60px;
+  background-image: url("img/new-parallax-1.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+.RECOMMENDED-top {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.RECOMMENDED-top h2 {
+  font-size: 30px;
+  line-height: 1.75em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+}
+.RECOMMENDED-top span {
+  min-width: 300px;
+  max-width: 800px;
+  display: inline-block;
+  color: #fff;
+  padding-top: 20px;
+}
+.card {
+  border: none;
+}
+.RECOMMENDED-bottom-card {
+  position: relative;
+}
+.card-centers {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffd71b;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-centers p {
+  color: black;
+  font-weight: 600;
+  font-size: 19px;
+  padding: 0;
+  margin: 0;
+}
+.card-body {
+  padding: 30px 0px;
+}
+.card-text-RECOMMENDED {
+  height: 100px;
+  font-size: 15px;
+}
+.card-title-RECOMMENDED {
+  height: 65px;
+}
+.card-title {
+  padding-left: 0px !important;
+}
+.SIMPLE {
+  padding: 80px 0;
+}
+.LATEST-top {
+  text-align: center;
+  padding: 60px;
+}
+.SIMPLE-top h2 {
+  font-size: 30px;
+  line-height: 1.75em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #111;
+}
+.SIMPLE-top span {
+  min-width: 300px;
+  max-width: 1100px;
+  display: inline-block;
+  color: gray;
+  padding-top: 20px;
+  display: inline-block;
+  line-height: 27px;
+  letter-spacing: 0.01rem;
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+.image-container:hover img {
+  transform: translateX(100%);
+}
+.text-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: black;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 22px;
+}
+.hover-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://piquant.qodeinteractive.com/wp-content/themes/piquant/assets/css/img/wh-pattern.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.image-container:hover .hover-div {
+  opacity: 1;
+}
+.image-container:hover .text-overlay {
+  opacity: 0;
+}
+.hover-content {
+  padding-left: 20px;
+  width: 100%;
+}
+.hover-content h4 {
+  color: white;
+  padding-bottom: 20px;
+}
+.hover-content p {
+  color: white;
+  line-height: 32px;
+  font-size: 15px;
+}
+.hover-content button {
+  background-color: #ffd71b;
+  width: 100px;
+  height: 40px;
+  font-weight: 700;
+  transition: all ease 0.5s;
+  font-size: 15px;
+}
+.hover-content button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.HAPPY {
+  margin-top: 60px;
+  background-image: url("img/new-parallax-2.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+.HAPPY-top {
+  text-align: center;
+}
+.HAPPY-top h2 {
+  padding: 20px 0 5px 0;
+  color: white;
+}
+.HAPPY-top p {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Shadows Into Light", serif;
+  text-transform: none;
+  font-weight: 400;
+  color: #fff;
+}
+
+.mySwiper-happy {
+  height: 90vh;
+}
+.mySwiper-happy-div {
+  text-align: center;
+}
+.mySwiper-happy-div p {
+  max-width: 800px;
+  min-width: 250px;
+  line-height: 30px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+.star-color {
+  color: #ffd71b;
+}
+.fa-star {
+  font-family: 600;
+  font-size: 14px;
+}
+.mySwiper-happy-div span {
+  font-size: 22px;
+  display: inline-block;
+  padding-top: 20px;
+}
+.card-body-latest {
+  text-align: start !important;
+}
+.card-body-latest h5 {
+  padding-left: 0;
+}
+.LATEST-top {
+  text-align: center;
+  padding: 60px;
+}
+.LATEST-top span {
+  color: gray;
+  max-width: 400;
+  min-width: 250px;
+  display: inline-block;
+  line-height: 27px;
+  font-size: 16px;
+  letter-spacing: 0.01rem;
+}
+.mkdf-post-info-item {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: Oswald, serif;
+  margin: 0;
+  text-align: left;
+}
+.Bon {
+  background-image: url(img/parallax-3.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AWARD {
+  padding: 80px 0;
+}
+.AWARD-left-top h5 {
+  color: #111;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+.AWARD-left-top p {
+  color: gray;
+  font-size: 16px;
+  line-height: 27px;
+  padding: 20px 0;
+}
+.AWARD-left-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.AWARD-left-bottom-left {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.AWARD-left-bottom-left p {
+  font-weight: 700;
+  font-size: 19px;
+  color: black;
+}
+.AWARD-left-bottom span {
+  color: black;
+  display: inline-block;
+  padding-bottom: 30px;
+  font-size: 14px;
+  letter-spacing: 0.02rem;
+}
+.CONTACT {
+  padding-right: 20px;
+}
+
+.AWARD-right {
+  background-image: url(https://piquant.qodeinteractive.com/wp-content/uploads/2015/11/home-1-opening-hours-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 30px 50px;
+}
+.AWARD-right-title {
+  font-size: 32px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+.AWARD-right-title span {
+  color: #ffd71b;
+}
+.AWARD-right-card {
+  border: 1px solid white;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px;
+}
+.fa-clock {
+  padding-right: 10px;
+}
+.AWARD-right-card-title span {
+  letter-spacing: 5px;
+}
+
+.select-people {
+  width: 100%;
+  height: 41px;
+  border: 1px solid black;
+  font-size: 14px;
+  color: gray;
+}
+.select-date {
+  width: 100%;
+  height: 41px;
+  border: 1px solid black;
+  font-size: 14px;
+  color: gray;
+  padding: 10px 25px;
+}
+.select-oclock {
+  width: 100%;
+  height: 41px;
+  border: 1px solid black;
+  font-size: 14px;
+  color: gray;
+  padding: 10px 25px;
+}
+.Book-Table {
+  width: 100%;
+  height: 41px;
+  background-color: #ffd71b;
+  color: #111;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.5s ease all;
+}
+.Book-Table:hover {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  background-color: #111;
+  height: 100%;
+  padding: 40px 70px;
+  margin-top: 80px;
+}
+
+.footer-logo img {
+  width: 106px;
+  height: 40px;
+}
+.footer-left span {
+  color: white;
+  font-size: 13px;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  padding: 25px 0;
+}
+.form-icon {
+  padding-right: 10px;
+}
+.RECENT {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.RECENT a {
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+  transition: 0.5s ease all;
+}
+.RECENT a:hover {
+  color: #ffd71b;
+}
+.RECENTH4 {
+  color: white;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+.RECENTH4 span {
+  color: white;
+  font-size: 14px;
+}
+.footer-end {
+  padding: 20px 0;
+  border-top: 1px solid white;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.02rem;
+}
+.footer-end a {
+  color: white;
+  transition: all 0.5s ease;
+}
+.footer-end a:hover {
+  color: #ffd71b;
+}
+.footer-end-icons {
+  padding: 0 15px;
+}
+
+/* abouts us start */
+.About-Us {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.About-Us h1 {
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.About-Us p {
+  max-width: 450px;
+  min-width: 250px;
+  letter-spacing: 0.02rem;
+  font-size: 18px;
+}
+.counter-bg-fon {
+  background-image: url(https://piquant.qodeinteractive.com/wp-content/uploads/2015/11/parallax-5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+.counter-bg-fon p {
+  font-size: 42px;
+  font-weight: 700;
+  color: white;
+  padding: 15px 0;
+}
+.counter-bg-fon span {
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffd71b;
+}
+.STORY {
+  padding: 80px 0;
+}
+.STORY-left h2 {
+  font-size: 40px;
+  color: black;
+  font-weight: 700;
+  padding: 30px 0;
+}
+.STORY-left span {
+  color: #707070;
+  line-height: 25px;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  display: inline-block;
+  padding-bottom: 30px;
+}
+.STORY-right-top button {
+  background-color: white;
+  border: 1px solid black;
+  width: 122px;
+  height: 42px;
+  color: gray;
+  font-weight: 400;
+  transition: all 0.5s ease;
+}
+.STORY-right-top button i {
+  color: black;
+  font-size: 18px;
+  padding-right: 15px;
+}
+.STORY-right-top button:hover {
+  color: black;
+}
+.STORY-right-top-top span {
+  padding: 30px 15px;
+  color: gray;
+  font-size: 17px;
+  line-height: 30px;
+  display: inline-block;
+  font-family: "Times New Roman", Times, serif;
+}
+.STORY-right-card {
+  border: 1px solid black;
+  height: 100%;
+}
+.top1 {
+  background-image: url(https://piquant.qodeinteractive.com/wp-content/uploads/2015/11/home-2-tab-img-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top2 {
+  background-image: url(https://piquant.qodeinteractive.com/wp-content/uploads/2015/11/home-2-tab-img-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top3 {
+  background-image: url(https://piquant.qodeinteractive.com/wp-content/uploads/2015/11/home-2-tab-img-3ajpg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.STORY-right-top-bottom-left {
+  padding-left: 20px;
+  color: gray;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+.STORY-right-top-bottom-left i {
+  padding-right: 20px;
+}
+/* abouts us end */
+
+@media (max-width: 1224px) {
+  .swiper-textP {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 15px 0 7px 0;
+    font-family: sans-serif;
+  }
+}
+@media (max-width: 1024px) {
+  .section-card {
+    padding: 30px 30px;
+  }
+}
+@media (max-width: 991px) {
+  .STORY-right {
+    padding-top: 60px;
+  }
+  .footer-pt {
+    padding-top: 30px;
+  }
+  .AWARD-left-center-div-img img {
+    width: 100% !important;
+  }
+  .all-data {
+    margin-top: 20px;
+  }
+  .AWARD-right {
+    padding: 20px 40px;
+  }
+  .AWARD-right-card {
+    border: 1px solid white;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+  }
+  .AWARD-right-card-title span {
+    letter-spacing: 0px;
+  }
+  .image-container {
+    height: 226px;
+    margin-top: 30px;
+  }
+  .hover-content h4 {
+    padding-bottom: 0px;
+    font-size: 17px;
+  }
+  .hover-content p {
+    color: white;
+    line-height: 25px;
+    font-size: 13px;
+    width: 100%;
+  }
+  .welcome-right {
+    padding-top: 60px;
+  }
+  .Gallery-left p {
+    font-size: 26px;
+    width: 122px !important;
+  }
+  .Gallery-left {
+    width: 100%;
+  }
+  .Gallery-left ul {
+    padding-left: 10px;
+    flex-wrap: wrap;
+    min-width: 270px;
+  }
+  .full-gallery {
+    display: none;
+  }
+  .card {
+    margin-top: 40px;
+  }
+  .section-card {
+    top: 0px;
+  }
+  .navbar-collapse {
+    padding-top: 30px;
+  }
+  .header-bg-fon {
+    width: 100%;
+  }
+  .swiper-container {
+    padding-top: 80px;
+  }
+  .right-col-All {
+    width: 58px;
+    height: 396px;
+  }
+
+  .right-col img {
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .all-counter {
+    padding: 30px 0;
+  }
+  .counter-bg-fon {
+    height: 100%;
+  }
+  .art-gallery-card {
+    width: 100%;
+  }
+  .card-centers {
+    transform: translate(-50%, -50%);
+  }
+  .AWARD-left-bottom {
+    flex-direction: column;
+  }
+  .AWARD-left-top h5 {
+    font-size: 26px;
+  }
+}
+
+/* slider start */
+
+/* slider end */
